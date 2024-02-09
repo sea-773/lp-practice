@@ -1,1 +1,220 @@
 @charset "utf-8";
+
+.inner{
+  margin: 0 auto;
+  width: 1100px;
+}
+
+/* header */
+
+header{
+  background: #fff;
+}
+
+.inner-header nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; 
+}
+
+.icon-link, .button-link{
+  margin-top: 15px; 
+  display: inline-block;
+}
+
+.icon-link{
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.button-link{
+  background-color: #6ba7eb;
+  color: #ffffff;
+  padding: 12px 14px;
+  font-size: 12px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.button-link:hover{
+  color: #333; 
+}
+
+/* keyvisual */
+
+.keyvisual-inner{
+  background-image: url(../img/keyvisual/keyvisual.jpg);
+  background-size: cover;
+  background-position: center center;
+  padding-top: 400px; 
+  padding-bottom: 400px; 
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.keyvisual-inner h1{
+  font-size: 65px;
+  font-weight: 700;
+  color: #6ba7eb;
+  text-align: center;
+}
+
+.keyvisual-inner h2{
+  font-size: 40px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center; 
+  margin-top: 30px;
+}
+
+/* WORK */
+
+.work-inner{
+  background: #e3f2fd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+}
+
+.work-image{
+  flex: 4; 
+  display: flex;
+  justify-content: center;
+}
+
+.work-image img{
+  width: 250px;
+  margin-top: 50px;
+}
+
+.content1{
+  flex: 6; 
+  text-align: center;
+}
+
+.work-inner h3{
+  font-size: 40px;
+  letter-spacing: 10px;
+  margin-top: 70px;
+}
+
+p{
+  font-size: 15px;
+  line-height: 18px;
+  word-break: break-all;
+  margin-top: 35px;
+}
+
+/* WE ARE SKILLS */
+
+.skills-inner{
+  background: #fff;
+}
+
+.skills-inner h3{
+  font-size: 40px;
+  letter-spacing: 10px;
+  margin: 50px 0px;
+  text-align: center;
+}
+
+.skills-image{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  gap: 100px; /
+}
+
+.skills-image img{
+  width: 300px;
+  height: 300px;
+  opacity: 0.7; 
+  transition: opacity 0.3s; 
+}
+
+.skills-image img:hover{
+  opacity: 1.0; 
+}
+
+
+.skills-image a:last-child img{
+  margin-bottom: 70px;
+}
+
+/* SELECT PLAN */
+
+.select-inner{
+  background:#d0dfea;
+  text-align: center;
+  padding-top: 50px; 
+  padding-bottom: 50px;
+}
+
+.select-inner h3{
+  font-size: 40px;
+  letter-spacing: 10px;
+  margin-bottom: 50px;
+}
+
+.cell-table{
+  table-layout: fixed;
+  width: 100%;
+  text-align: center;
+}
+
+.cell-table th{
+  line-height: 26px;
+  font-size: 16px;
+}
+
+.cell-table th, .cell-table td {
+  border-left: 2px solid #fff;
+  padding: 10px;
+}
+
+.cell-table tr{
+  background: #f9f9f9;
+}
+
+.cell-table thead tr:first-child {
+  background: #6ba7eb;
+}
+
+.cell-table tr:nth-child(even){
+  background: #e0efff;
+}
+
+/* sns */
+
+.sns-inner{
+  background: #e3f2fd;
+  padding: 200px 0px;
+  text-align: center;
+}
+
+.sns-link{
+  color: #8c8c8c;
+  overflow: hidden;
+  font-size: 40px;
+  padding: 25px 0px; 
+  margin: 72px;
+  display: inline-block; 
+  transition: background-color 0.5s; 
+}
+
+.sns-link:hover{
+  color: #fff; 
+}
+
+
+/* footer */
+
+.inner-footer{
+  font-size: 10px;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  letter-spacing: 0.5px;
+  background: #cfd8dc;
+  text-align: right; 
+}
