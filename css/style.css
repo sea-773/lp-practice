@@ -9,6 +9,10 @@
 
 header{
   background: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .inner-header nav{
@@ -42,10 +46,13 @@ header{
 
 /* keyvisual */
 
-.keyvisual-inner{
+.keyvisual{
   background-image: url(../img/keyvisual/keyvisual.jpg);
   background-size: cover;
   background-position: center center;
+}
+
+.keyvisual-inner{
   padding-top: 400px; 
   padding-bottom: 400px; 
   flex-direction: column;
@@ -70,8 +77,11 @@ header{
 
 /* WORK */
 
-.work-inner{
+.work {
   background: #e3f2fd;
+}
+
+.work-inner{
   display: flex;
   align-items: center;
   justify-content: space-between; 
@@ -108,7 +118,7 @@ p{
 
 /* WE ARE SKILLS */
 
-.skills-inner{
+.skills-image{
   background: #fff;
 }
 
@@ -144,8 +154,11 @@ p{
 
 /* SELECT PLAN */
 
-.select-inner{
+.plan{
   background:#d0dfea;
+}
+
+.select-inner{
   text-align: center;
   padding-top: 50px; 
   padding-bottom: 50px;
@@ -173,6 +186,10 @@ p{
   padding: 10px;
 }
 
+.cell-table th:first-child, .cell-table td:first-child {
+  border-left: none;
+}
+
 .cell-table tr{
   background: #f9f9f9;
 }
@@ -187,8 +204,11 @@ p{
 
 /* sns */
 
-.sns-inner{
+.sns{
   background: #e3f2fd;
+}
+
+.sns-inner{
   padding: 200px 0px;
   text-align: center;
 }
@@ -207,14 +227,16 @@ p{
   color: #fff; 
 }
 
-
 /* footer */
+
+footer{
+  background: #cfd8dc;
+}
 
 .inner-footer{
   font-size: 10px;
   padding-top: 20px;
   padding-bottom: 25px;
   letter-spacing: 0.5px;
-  background: #cfd8dc;
   text-align: right; 
 }
