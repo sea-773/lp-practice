@@ -7,19 +7,18 @@
 
 /* header */
 
-header{
+.inner-header{
   background: #fff;
   position: fixed;
-  top: 0;
   width: 100%;
   z-index: 1000;
+  padding: 15px 0px;
 }
 
 .inner-header nav{
   display: flex;
   justify-content: space-between;
   align-items: flex-start; 
-  padding: 15px 0px;
 }
 
 .icon-link{
@@ -108,15 +107,17 @@ p{
 
 /* WE ARE SKILLS */
 
-.skills-image{
+.skills-inner{
   background: #fff;
+  padding-top: 50px;
+  padding-bottom: 70px;
 }
 
 .skills-inner h3{
   font-size: 40px;
   letter-spacing: 10px;
-  margin: 50px 0px;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .skills-image{
@@ -124,21 +125,18 @@ p{
   flex-wrap: wrap;
   justify-content: center; 
   gap: 100px; 
+  list-style: none; 
 }
 
-.skills-image img{
+.skills-image li img{
   width: 300px;
   height: 300px;
   opacity: 0.7; 
   transition: opacity 0.3s; 
 }
 
-.skills-image img:hover{
+.skills-image li img:hover{
   opacity: 1.0; 
-}
-
-.skills-image a:last-child img{
-  margin-bottom: 70px;
 }
 
 /* SELECT PLAN */
