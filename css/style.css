@@ -7,11 +7,16 @@
 
 /* header */
 
-.inner-header{
-  background: #fff;
+header {
   position: fixed;
   width: 100%;
   z-index: 1000;
+  background: #fff;
+}
+
+
+.inner-header{
+  width: 100%;
   padding: 15px 0px;
 }
 
@@ -19,8 +24,8 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start; 
-  padding: 0 170px; 
 }
+ 
 
 .icon-link{
   color: #777;
@@ -136,7 +141,9 @@ p{
   margin-top: 0;
 }
 
-.skills-image li:nth-last-child(-n+3){
+.skills-image li:nth-last-child(-n+3):nth-child(3n+1),
+.skills-image li:nth-last-child(-n+3):nth-child(3n+2),
+.skills-image li:nth-last-child(-n+3):nth-child(3n){
   margin-bottom: 0;
 }
 
@@ -173,7 +180,7 @@ p{
 .select-inner h3{
   font-size: 40px;
   letter-spacing: 10px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .cell-table{
