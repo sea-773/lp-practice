@@ -7,16 +7,14 @@
 
 /* header */
 
-header {
+header{
   position: fixed;
   width: 100%;
   z-index: 1000;
   background: #fff;
 }
 
-
 .inner-header{
-  width: 100%;
   padding: 15px 0px;
 }
 
@@ -129,7 +127,7 @@ p{
 .skills-image{
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; 
+  justify-content: flex-start;
   list-style: none; 
 }
 
