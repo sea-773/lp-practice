@@ -23,7 +23,6 @@ header{
   justify-content: space-between;
   align-items: flex-start; 
 }
- 
 
 .icon-link{
   color: #777;
@@ -40,6 +39,20 @@ header{
 
 .button-link:hover{
   color: #333; 
+}
+
+.hamburger-menu{
+  display: none; 
+  cursor: pointer;
+}
+
+.hamburger-menu span{
+  display: block;
+  height: 3px;
+  width: 45px;
+  background: #ccc;
+  margin: 13px 0;
+  transition: 0.4s;
 }
 
 /* keyvisual */
@@ -192,12 +205,12 @@ p{
   font-size: 16px;
 }
 
-.cell-table th, .cell-table td {
+.cell-table th, .cell-table td{
   border-left: 2px solid #fff;
   padding: 10px;
 }
 
-.cell-table th:first-child, .cell-table td:first-child {
+.cell-table th:first-child, .cell-table td:first-child{
   border-left: none;
 }
 
@@ -205,7 +218,7 @@ p{
   background: #f9f9f9;
 }
 
-.cell-table thead tr:first-child {
+.cell-table thead tr:first-child{
   background: #6ba7eb;
 }
 
@@ -250,3 +263,139 @@ footer{
   letter-spacing: 0.5px;
   text-align: right; 
 }
+
+
+@media screen and (max-width: 1199px){
+
+  /* keyvisual */
+
+  .keyvisual{
+      padding: 250px 0px;
+    }
+
+  /* WORK */
+
+  .work{
+    padding: 50px 0px;
+  }
+
+  .work-inner{
+    flex-direction: column;
+  }
+
+  .work-image, .work-description{
+    width: 100%;
+  }
+
+   /* WE ARE SKILLS */
+
+   .skills-image{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .skills-image li{
+    margin: 0; 
+  }
+
+  img{
+    display: block;
+    margin: 0; 
+  }
+  
+  .skills-image li:nth-child(3n){
+    margin-bottom: 80px;
+  }
+
+  .skills-image li:last-child{
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 767px){
+
+  /* header */
+
+  .button-link {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  /* keyvisual */
+
+  .keyvisual{
+    padding: 200px 0px;
+  }
+
+  .keyvisual-inner h1{
+    font-size: 40px;
+  }
+
+  .keyvisual-inner h2{
+    font-size: 30px;
+  }
+  
+  /* WORK */
+
+  .work-inner{
+    flex-direction: column;
+  }
+
+  .work-image, .work-description{
+    width: 100%;
+  }
+
+  /* WE ARE SKILLS */
+
+  .skills-image{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .skills-image li{
+    margin: 0; 
+  }
+
+  img{
+    display: block;
+    margin: 0; 
+  }
+  
+  .skills-image li:nth-child(3n){
+    margin-bottom: 80px;
+  }
+
+  .skills-image li:last-child{
+    margin-bottom: 0;
+  }
+
+  /* SELECT PLAN */
+
+  .cell-table th{
+    line-height: 22px;
+    font-size: 14px;
+  }
+
+  .cell-table td{
+    font-size: 12px;
+  }
+
+  /* sns */
+
+  .sns{
+    padding: 50px 15px;
+  }
+
+  .sns-link{
+    display: block;
+    width: 100%; 
+    padding: 50px 0px; 
+  }
+
+}
+
